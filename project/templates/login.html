@@ -1,0 +1,39 @@
+<html>
+<head>
+<title> Login </title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body style="background:url('./bg.png')">
+ <img src="1.png" />
+ <div>
+
+	
+
+<script>  
+function validateform(){  
+var name=document.myform.name.value;  
+var password=document.myform.password.value;  
+  
+if (name==null || name==""){  
+  alert("Name can't be blank");  
+  return false;  
+}else if(password.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  }  
+}  
+</script>
+<div id="form">
+<form name="myform" method="post" action="output.html" onsubmit="return validateform()" >  
+<div class="input-box"><label>Username:</label>
+ <input type="text" id="name" placeholder="Enter Username" name="name" ><br/>  
+<label>Password:</label>
+<input type="password" id="password" placeholder="Enter Password" name="password"><br/>  
+<button type="submit"> Login </button>  
+</div>
+</form>
+
+<div class="container glass">
+	</div>
+</body>
+</html>
